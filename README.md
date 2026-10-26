@@ -34,7 +34,7 @@ Tokens are a budget. Small sessions with less context burn fewer of them.
 | 2 | Fill in the brief | `brief/brief.md` |
 | 3 | General plan: phases built to run in parallel, blocking work first | `plans/00-general.md`, `prompts/02-general-plan.md` |
 | 4 | Per phase, in a new session: plan, build, skim, commit, PR | `plans/phase-template.md`, `prompts/03-phase-plan.md`, `prompts/04-parallel-phases.md` |
-| 5 | Last mile: audit, persona reviews, UI polish, mobile, live URL | `prompts/05-audit.md`, `prompts/06-persona-review.md`, `prompts/07-ui-polish.md` |
+| 5 | Last mile: audit, persona reviews, UI polish with the `frontend-design` plugin, mobile, live URL | `prompts/05-audit.md`, `prompts/06-persona-review.md`, `prompts/07-ui-polish.md` |
 
 What it skips on purpose: subagent-driven development, test suites written for coverage, full code reviews, and cosmetic fixes. Polish what the judge sees, not what the judge might read.
 
@@ -77,12 +77,12 @@ One giant `AGENTS.md` eats context on every turn. Here `AGENTS.md` is a short in
 
 ## Claude Code plugins & skills
 
-`.claude/settings.json` enables these plugins from the official marketplace (`anthropics/claude-plugins-official`), so Claude Code offers to install them when you open the repo:
+`.claude/settings.json` enables these plugins from the official marketplace (`anthropics/claude-plugins-official`), so Claude Code offers to install them when you open the repo. These are the plugins I use on every hackathon build:
 
 | Plugin | What it's for |
 |--------|---------------|
-| `superpowers` | Process skills — brainstorming, systematic debugging, parallel agents, verification before claiming done |
-| `frontend-design` | Distinctive UI that doesn't look like a template — matters for the demo |
+| `superpowers` | Process skills for the whole build — brainstorming, systematic debugging, parallel agents, verification before claiming done |
+| `frontend-design` | The UI refinement pass — two to three hours after the demo path works, so it doesn't look like a template (`prompts/07-ui-polish.md`) |
 | `code-review` | Quick review pass before merging or pitching |
 
 Install manually if needed:
