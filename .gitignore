@@ -1,0 +1,38 @@
+# Firebase
+/firebase-debug.log
+/firebase-debug.*.log
+*.cache
+hosting/.cache
+/functions/node_modules/
+/functions/.env
+/functions/package-lock.json
+/firebase-*.zip
+/.firebase/
+/emulator-ui/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+/.env.*
+.envrc
+.idea/
+
+# Root node_modules
+/node_modules/
+
+# Claude Code
+.claude/settings.local.json
+.claude/worktrees/
+
+# App build output
+/app/dist/
+/app/node_modules/
+/app/.angular/
+
+# OS
+.DS_Store
