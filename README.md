@@ -110,6 +110,6 @@ Install manually if needed:
 - Put a new category in its own file and add a row to the table in `AGENTS.md` saying when to load it.
 - Keep `AGENTS.md` itself short. If something only applies to some tasks, it belongs in `rules/`.
 
-## Built from
+## Say hi
 
-Projects that placed at AI Builder Day: [FundPath](https://fundpath.dev) (1st), [Startup State](https://startup.juanlizarazo.com) (1st), and a JobNimbus roof estimator (3rd). By [Juan Lizarazo](https://juanlizarazo.com).
+Used the kit? Tell me how it went or ask questions on Instagram: [instagram.com/juaninvests](https://instagram.com/juaninvests)
