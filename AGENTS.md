@@ -6,7 +6,9 @@
 
 **[Product Name]** is an Angular 21+ (standalone components), Angular Material, SCSS application backed by Firebase Cloud Functions (TypeScript) and Firestore, built for **[Hackathon Name]**.
 
-**Key file:** `brief/brief.md` — challenge, judging rubric, required features, demo script. Read it before touching any feature.
+**Key files:**
+- `brief/brief.md` — challenge, judging rubric, required features, demo script. Read it before touching any feature.
+- `plans/00-general.md` — phases and which one is blocking.
 
 ---
 
@@ -22,7 +24,8 @@ Rules use the format `[CATEGORY-##]`. **Read only the files relevant to your tas
 
 | File | Categories | Load when… |
 |------|-----------|------------|
-| `rules/hackathon.md` | HACK | Always — scope, speed, testing stance |
+| `rules/hackathon.md` | HACK | Always — scope, speed, testing stance, last mile |
+| `rules/ai.md` | AI | Any feature that calls a model, or deciding where AI belongs |
 | `rules/typescript.md` | CMT, TS, PKG, ERR, file organization, shared types | Any TypeScript work |
 | `rules/angular.md` | ANG, MAT | Frontend components or templates |
 | `rules/scss.md` | SCSS, theme variables | Styling work |
@@ -38,8 +41,14 @@ Rules use the format `[CATEGORY-##]`. **Read only the files relevant to your tas
 
 - `[AGT-01]` Do NOT use the `superpowers:subagent-driven-development` skill — it's too slow for a hackathon clock. Implement plans directly.
 - `[AGT-02]` DO use subagents to parallelize independent work (e.g., backend function + frontend screen, or research while building). Use `superpowers:dispatching-parallel-agents` or the Agent tool directly.
-- `[AGT-03]` Use `superpowers:brainstorming` for scoping a new feature, and `superpowers:systematic-debugging` for bugs. Skip `superpowers:test-driven-development` (see `[HACK-06]`).
-- `[AGT-04]` Keep plans short — a checklist in chat, not a multi-page plan document.
+- `[AGT-03]` Use `superpowers:brainstorming` for scoping a new feature, and `superpowers:systematic-debugging` for bugs. Skip `superpowers:test-driven-development` (see `[HACK-08]`).
+
+### Planning in Layers
+
+- `[AGT-04]` The general plan lives in `plans/00-general.md`: high-level phases only, designed to run in parallel, with the blocking phase marked and built first.
+- `[AGT-05]` Deep-plan one phase at a time in `plans/phase-##-[name].md` before building it. Keep it a checklist, not an essay.
+- `[AGT-06]` One phase per session: plan, build, skim, commit, PR — then start a new session for the next phase. Long sessions drift and forget the brief.
+- `[AGT-07]` At the start of a phase session, read the brief, the general plan, and that phase's plan — not the whole repo.
 
 ---
 

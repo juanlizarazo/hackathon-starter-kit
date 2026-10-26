@@ -48,7 +48,7 @@
 
 ## 8. AI approach
 
-<!-- Where AI adds real value vs. where deterministic code is better. -->
+<!-- Where the model sits at the edges (see rules/ai.md): what unstructured input it turns into data, what it explains at the end. Everything else is rules. -->
 
 ## 9. Glossary
 
